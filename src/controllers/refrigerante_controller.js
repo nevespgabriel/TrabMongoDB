@@ -1,4 +1,4 @@
-const Refrigerante = require("../models/refrigerante_model.js");
+import Refrigerante from "../models/refrigerante_model.js";
 
 const store = async (req, res) => {
     try{
@@ -33,7 +33,7 @@ const destroy = async (req, res) => {
     res.json();
 }
 
-module.exports = {
+export default{
     store, 
     index,
     show,

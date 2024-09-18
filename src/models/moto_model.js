@@ -1,4 +1,4 @@
-const db = require("../db.js");
+import db from "../db.js";
 
 const Schema = db.Schema;
 
@@ -26,5 +26,4 @@ const motoSchema = new Schema({
 });
 
 const Moto = db.model("Moto", motoSchema);
-
-module.exports = Moto;
+export default Moto;

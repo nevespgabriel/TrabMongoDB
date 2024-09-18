@@ -1,6 +1,6 @@
-const express = require("express");
+import express from "express";
 const router = express.Router();
-const caneta_controller = require("../controllers/caneta_controller.js");
+import caneta_controller from "../controllers/caneta_controller.js";
 
 router.post("/", caneta_controller.store);
 router.get("/", caneta_controller.index);
@@ -8,4 +8,4 @@ router.get("/:id", caneta_controller.show);
 router.put("/:id", caneta_controller.update);
 router.delete("/:id", caneta_controller.destroy);
 
-module.exports = router;
+export default router;

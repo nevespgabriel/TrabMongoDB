@@ -1,4 +1,4 @@
-const Caneta = require("../models/caneta_model.js");
+import Caneta from "../models/caneta_model.js";
 
 const store = async (req, res) => {
     try{
@@ -33,7 +33,7 @@ const destroy = async (req, res) => {
     res.json();
 }
 
-module.exports = {
+export default{
     store, 
     index,
     show,

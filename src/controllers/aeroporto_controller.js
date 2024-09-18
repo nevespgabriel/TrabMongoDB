@@ -1,4 +1,4 @@
-const Aeroporto = require("../models/aeroporto_model.js");
+import Aeroporto from "../models/aeroporto_model.js";
 
 const store = async (req, res) => {
     try{
@@ -33,7 +33,7 @@ const destroy = async (req, res) => {
     res.json();
 }
 
-module.exports = {
+export default{
     store, 
     index,
     show,

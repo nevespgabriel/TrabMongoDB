@@ -1,4 +1,4 @@
-const db = require("../db.js");
+import db from "../db.js";
 
 const Schema = db.Schema;
 
@@ -23,4 +23,4 @@ const refrigeranteSchema = new Schema({
 
 const Refrigerante = db.model("Refrigerante", refrigeranteSchema);
 
-module.exports = Refrigerante;
+export default Refrigerante;

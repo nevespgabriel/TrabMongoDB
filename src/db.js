@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+import mongoose from "mongoose";
 
 const mongoDB = "mongodb+srv://nevespgabriel:95135759@cluster0.kykoa.mongodb.net/";
 
@@ -10,4 +10,4 @@ main()
     .then(() => console.log("Conexão realizada com sucesso."))
     .catch(err => console.log(err));
 
-module.exports = mongoose;
+export default mongoose;

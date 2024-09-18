@@ -1,5 +1,5 @@
-const db = require("../db.js");
-const cep_endereco = require("../middlewares/cep_endereco.js");
+import db from "../db.js";
+import cep_endereco from "../middlewares/cep_endereco.js";
 
 const Schema = db.Schema;
 
@@ -9,10 +9,11 @@ const aeroportoSchema = new Schema ({
         required: true
     },
     endereco:{
-
+        type: Schema.Types.Array,
+        required: true
     }
 });
 
 const Aeroporto = db.model("Aeroporto", aeroportoSchema);
 
-module.exports = Aeroporto;
+export default Aeroporto;
